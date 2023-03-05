@@ -1,0 +1,44 @@
+{
+    "cli": true,
+    "target": "directory",
+    "adapterName": "json-convert",
+    "title": "JSON convert",
+    "description": "Convert single json object to object tree",
+    "keywords": [
+        "json",
+        "convert",
+        "decode"
+    ],
+    "expert": "yes",
+    "features": [
+        "adapter"
+    ],
+    "adminFeatures": [],
+    "type": "logic",
+    "startMode": "daemon",
+    "connectionType": "local",
+    "dataSource": "poll",
+    "connectionIndicator": "no",
+    "language": "TypeScript",
+    "nodeVersion": "16",
+    "adminUi": "json",
+    "tools": [
+        "ESLint",
+        "devcontainer"
+    ],
+    "releaseScript": "yes",
+    "devServer": "yes",
+    "devServerPort": 8081,
+    "indentation": "Space (4)",
+    "quotes": "single",
+    "es6class": "yes",
+    "authorName": "jb-io",
+    "authorGithub": "jb-io",
+    "authorEmail": "96919536+jb-io@users.noreply.github.com",
+    "gitRemoteProtocol": "SSH",
+    "gitCommit": "yes",
+    "defaultBranch": "master",
+    "license": "GNU GPLv3",
+    "dependabot": "yes",
+    "creatorVersion": "2.3.0"
+}
