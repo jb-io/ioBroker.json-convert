@@ -7,7 +7,7 @@
     "email": "96919536+jb-io@users.noreply.github.com"
   },
   "homepage": "https://github.com/jb-io/ioBroker.json-convert",
-  "license": "GPL-3.0",
+  "license": "GPL-3.0-or-later",
   "keywords": [
     "json",
     "convert",
