@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/lib/typedef.ts"],
+  "sourcesContent": ["export interface ObjectConfiguration {\n    objectId: string,\n    alias: string,\n}\n\nexport interface ObjectConfigurationList {\n    [key: string]: ObjectConfiguration;\n}\n"],
+  "mappings": ";;;;;;;;;;;;;;AAAA;AAAA;",
+  "names": []
+}
