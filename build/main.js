@@ -29,8 +29,7 @@ class JsonConvert extends utils.Adapter {
     this.on("unload", this.onUnload.bind(this));
   }
   async onReady() {
-    this.log.info("config option1: " + this.config.option1);
-    this.log.info("config option2: " + this.config.option2);
+    this.log.info("config objects: " + this.config.objects);
     await this.setObjectNotExistsAsync("testVariable", {
       type: "state",
       common: {

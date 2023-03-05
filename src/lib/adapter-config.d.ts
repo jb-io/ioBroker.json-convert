@@ -1,11 +1,12 @@
 // This file extends the AdapterConfig type from "@types/iobroker"
 
+import { ObjectConfiguration } from './typedef';
+
 // Augment the globally declared type ioBroker.AdapterConfig
 declare global {
     namespace ioBroker {
         interface AdapterConfig {
-            option1: boolean;
-            option2: string;
+            objects: Array<ObjectConfiguration>;
         }
     }
 }
