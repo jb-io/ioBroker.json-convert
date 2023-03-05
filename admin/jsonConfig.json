@@ -3,9 +3,28 @@
     "type": "panel",
     "items": {
         "objects": {
-            "type": "checkbox",
+            "type": "table",
             "label": "objects",
-            "newLine": true
+            "items": [
+                {
+                    "type": "objectId",
+                    "width": "50%",
+                    "title": "objectId",
+                    "attr": "objectId",
+                    "sort": true,
+                    "validator": "!!data.objectId",
+                    "validatorNoSaveOnError": true
+                },
+                {
+                    "type": "text",
+                    "width": "50%",
+                    "title": "alias",
+                    "attr": "alias",
+                    "sort": true,
+                    "validator": "!!data.alias",
+                    "validatorNoSaveOnError": true
+                }
+            ]
         }
     }
 }
