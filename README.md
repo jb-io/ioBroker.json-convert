@@ -103,7 +103,7 @@ Please refer to the [`dev-server` documentation](https://github.com/ioBroker/dev
     Placeholder for the next version (at the beginning of the line):
     ### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 0.0.3 (2023-03-07)
 * [BUGFIX] Handle json decode exception 
 * [TASK] Fix adapter checks
 

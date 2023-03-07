@@ -1,99 +1,112 @@
 {
-    "common": {
-        "name": "json-convert",
-        "version": "0.0.2",
-        "news": {
-            "0.0.2": {
-                "en": "[FEATURE] Basic implementation",
-                "de": "[FEATURE] Grundlegende Umsetzung",
-                "ru": "[FEATURE] Основная реализация",
-                "pt": "Implementação básica",
-                "nl": "Basisische implementatie",
-                "fr": "[FEATURE] Mise en œuvre de base",
-                "it": "[FEATURE] Applicazione di base",
-                "es": "Aplicación básica",
-                "pl": "(FEATURE Basic implementation) (ang.)",
-                "uk": "[FEATURE] Базова реалізація",
-                "zh-cn": "[签字]"
-            },
-            "0.0.1": {
-                "en": "initial release",
-                "de": "Erstveröffentlichung",
-                "ru": "Начальная версия",
-                "pt": "lançamento inicial",
-                "nl": "Eerste uitgave",
-                "fr": "Première version",
-                "it": "Versione iniziale",
-                "es": "Versión inicial",
-                "pl": "Pierwsze wydanie",
-                "zh-cn": "首次出版",
-                "uk": "початковий випуск"
-            }
-        },
-        "titleLang": {
-            "en": "JSON convert",
-            "de": "JSON-Konvertierung",
-            "ru": "JSON конвертировать",
-            "pt": "JSON converter",
-            "nl": "JSON-conversie",
-            "fr": "Conversion JSON",
-            "it": "Conversione JSON",
-            "es": "convertir JSON",
-            "pl": "Konwersja JSON",
-            "zh-cn": "JSON转换",
-            "uk": "Перетворення JSON"
-        },
-        "desc": {
-            "en": "Convert single json object to object tree",
-            "de": "Konvertieren Sie ein einzelnes JSON-Objekt in einen Objektbaum",
-            "ru": "Преобразование одного объекта json в дерево объектов",
-            "pt": "Converter um único objeto json em árvore de objetos",
-            "nl": "Converteer een enkel json-object naar een objectboom",
-            "fr": "Convertir un seul objet json en arbre d'objets",
-            "it": "Converti un singolo oggetto JSON in un albero di oggetti",
-            "es": "Convierta un objeto json único en un árbol de objetos",
-            "pl": "Konwertuj pojedynczy obiekt json na drzewo obiektów",
-            "zh-cn": "将单个 json 对象转换为对象树",
-            "uk": "Перетворення окремого об’єкта json на дерево об’єктів"
-        },
-        "authors": [
-            "jb-io <96919536+jb-io@users.noreply.github.com>"
-        ],
-        "keywords": [
-            "json",
-            "convert",
-            "decode"
-        ],
-        "license": "GPL-3.0-or-later",
-        "platform": "Javascript/Node.js",
-        "main": "build/main.js",
-        "icon": "json-convert.png",
-        "enabled": true,
-        "extIcon": "https://raw.githubusercontent.com/jb-io/ioBroker.json-convert/master/admin/json-convert.png",
-        "readme": "https://github.com/jb-io/ioBroker.json-convert/blob/master/README.md",
-        "loglevel": "info",
-        "mode": "daemon",
-        "type": "logic",
-        "compact": true,
-        "connectionType": "local",
-        "dataSource": "poll",
-        "adminUI": {
-            "config": "json"
-        },
-        "dependencies": [
-            {
-                "js-controller": ">=3.3.22"
-            }
-        ],
-        "globalDependencies": [
-            {
-                "admin": ">=5.1.13"
-            }
-        ]
+  "common": {
+    "name": "json-convert",
+    "version": "0.0.3",
+    "news": {
+      "0.0.3": {
+        "en": "[BUGFIX] Handle json decode exception \n[TASK] Fix adapter checks",
+        "de": "[BUGFIX] Handle json decode Ausnahme\n[TASK] Adapterprüfungen reparieren",
+        "ru": "[BUGFIX] Ручка json decode исключение\n[TASK] Fix адаптер проверки",
+        "pt": "[BUGFIX] Lidar com a exceção de decodificação json\n[TASK] Corrigir verificações de adaptador",
+        "nl": "Handle Json decode uitzondering\nFix adapter cheques",
+        "fr": "[BUGFIX] Handle json decode exception\n[TASK] Contrôles d'adaptateur fixes",
+        "it": "[BUGFIX] Manico json codice eccezione\n[TASK] Fissare i controlli dell'adattatore",
+        "es": "[BUGFIX] Handle json decode exception\n[TASK] Fija los controles de adaptador",
+        "pl": "Handle json decode exception (ang.)\n(TASK) Fix adapter (ang.)",
+        "uk": "[BUGFIX] Виняток джсон декодування\n[TASK] Перевірка адаптера",
+        "zh-cn": "[BUGFIX] Hancentral json deode\n[TASK]"
+      },
+      "0.0.2": {
+        "en": "[FEATURE] Basic implementation",
+        "de": "[FEATURE] Grundlegende Umsetzung",
+        "ru": "[FEATURE] Основная реализация",
+        "pt": "Implementação básica",
+        "nl": "Basisische implementatie",
+        "fr": "[FEATURE] Mise en œuvre de base",
+        "it": "[FEATURE] Applicazione di base",
+        "es": "Aplicación básica",
+        "pl": "(FEATURE Basic implementation) (ang.)",
+        "uk": "[FEATURE] Базова реалізація",
+        "zh-cn": "[签字]"
+      },
+      "0.0.1": {
+        "en": "initial release",
+        "de": "Erstveröffentlichung",
+        "ru": "Начальная версия",
+        "pt": "lançamento inicial",
+        "nl": "Eerste uitgave",
+        "fr": "Première version",
+        "it": "Versione iniziale",
+        "es": "Versión inicial",
+        "pl": "Pierwsze wydanie",
+        "zh-cn": "首次出版",
+        "uk": "початковий випуск"
+      }
     },
-    "native": {
-        "objects": []
+    "titleLang": {
+      "en": "JSON convert",
+      "de": "JSON-Konvertierung",
+      "ru": "JSON конвертировать",
+      "pt": "JSON converter",
+      "nl": "JSON-conversie",
+      "fr": "Conversion JSON",
+      "it": "Conversione JSON",
+      "es": "convertir JSON",
+      "pl": "Konwersja JSON",
+      "zh-cn": "JSON转换",
+      "uk": "Перетворення JSON"
     },
-    "objects": [],
-    "instanceObjects": []
+    "desc": {
+      "en": "Convert single json object to object tree",
+      "de": "Konvertieren Sie ein einzelnes JSON-Objekt in einen Objektbaum",
+      "ru": "Преобразование одного объекта json в дерево объектов",
+      "pt": "Converter um único objeto json em árvore de objetos",
+      "nl": "Converteer een enkel json-object naar een objectboom",
+      "fr": "Convertir un seul objet json en arbre d'objets",
+      "it": "Converti un singolo oggetto JSON in un albero di oggetti",
+      "es": "Convierta un objeto json único en un árbol de objetos",
+      "pl": "Konwertuj pojedynczy obiekt json na drzewo obiektów",
+      "zh-cn": "将单个 json 对象转换为对象树",
+      "uk": "Перетворення окремого об’єкта json на дерево об’єктів"
+    },
+    "authors": [
+      "jb-io <96919536+jb-io@users.noreply.github.com>"
+    ],
+    "keywords": [
+      "json",
+      "convert",
+      "decode"
+    ],
+    "license": "GPL-3.0-or-later",
+    "platform": "Javascript/Node.js",
+    "main": "build/main.js",
+    "icon": "json-convert.png",
+    "enabled": true,
+    "extIcon": "https://raw.githubusercontent.com/jb-io/ioBroker.json-convert/master/admin/json-convert.png",
+    "readme": "https://github.com/jb-io/ioBroker.json-convert/blob/master/README.md",
+    "loglevel": "info",
+    "mode": "daemon",
+    "type": "logic",
+    "compact": true,
+    "connectionType": "local",
+    "dataSource": "poll",
+    "adminUI": {
+      "config": "json"
+    },
+    "dependencies": [
+      {
+        "js-controller": ">=3.3.22"
+      }
+    ],
+    "globalDependencies": [
+      {
+        "admin": ">=5.1.13"
+      }
+    ]
+  },
+  "native": {
+    "objects": []
+  },
+  "objects": [],
+  "instanceObjects": []
 }

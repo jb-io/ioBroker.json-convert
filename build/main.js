@@ -64,7 +64,6 @@ class JsonConvert extends utils.Adapter {
     }
   }
   async onJsonStateChanged(state, config) {
-    const data = JSON.parse(state.val);
     await this.setObjectNotExistsAsync(config.alias, {
       type: "device",
       common: {
@@ -73,6 +72,12 @@ class JsonConvert extends utils.Adapter {
       },
       native: {}
     });
+    let data;
+    try {
+      data = JSON.parse(state.val);
+    } catch (e) {
+      return;
+    }
     await this.writeObject(config.alias, data);
   }
   async onStateChange(id, state) {
