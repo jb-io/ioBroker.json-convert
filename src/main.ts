@@ -126,7 +126,6 @@ class JsonConvert extends utils.Adapter {
     }
 
     private async onJsonStateChanged(state: ioBroker.State, config: ObjectConfiguration): Promise<void> {
-        const data = JSON.parse(state.val as string);
 
         await this.setObjectNotExistsAsync(config.alias, {
             type: 'device',
@@ -137,7 +136,14 @@ class JsonConvert extends utils.Adapter {
             native: {},
         });
 
+        let data;
+        try {
+            data = JSON.parse(state.val as string);
+        } catch (e) {
+            return;
+        }
         await this.writeObject(config.alias , data);
+
     }
 
     /**
