@@ -98,11 +98,21 @@ The ioBroker.admin interface will then be available at http://localhost:8081/
 
 Please refer to the [`dev-server` documentation](https://github.com/ioBroker/dev-server#command-line) for more details.
 
+## Open Tasks
+* [TODO] Insert Translation
+* [TODO] Create README
+* [TODO] Add configuration if ack is required for update
+* [TODO] Add configuration to select update behavior "replacing" or "additive" 
+
 ## Changelog
 <!--
     Placeholder for the next version (at the beginning of the line):
     ### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* [TASK] Code refactoring
+* [TASK] Add test cases
+
 ### 0.0.3 (2023-03-07)
 * [BUGFIX] Handle json decode exception 
 * [TASK] Fix adapter checks

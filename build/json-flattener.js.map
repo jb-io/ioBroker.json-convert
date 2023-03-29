@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/json-flattener.ts"],
+  "sourcesContent": ["import {FlattenedObject} from './lib/typedef';\n\nexport default class JsonFlattener {\n\n    public flattenJson(json: string): FlattenedObject|null {\n        try {\n            const result = {};\n            const data = JSON.parse(json);\n            this.flattenObject(result, data);\n            return result;\n        } catch (e) {\n            return null;\n        }\n    }\n\n    private flattenObject(result: any, data: any, idPrefix: string | null = null): void {\n        if (typeof data !== 'object') {\n            result[idPrefix || 'data'] = data;\n            return;\n        }\n        for (const dataKey in data) {\n            const nestedPrefix = idPrefix ? `${idPrefix}.${dataKey}` : dataKey;\n            this.flattenObject(result, data[dataKey], nestedPrefix);\n        }\n    }\n}\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAEA,MAAO,cAA4B;AAAA,EAExB,YAAY,MAAoC;AACnD,QAAI;AACA,YAAM,SAAS,CAAC;AAChB,YAAM,OAAO,KAAK,MAAM,IAAI;AAC5B,WAAK,cAAc,QAAQ,IAAI;AAC/B,aAAO;AAAA,IACX,SAAS,GAAP;AACE,aAAO;AAAA,IACX;AAAA,EACJ;AAAA,EAEQ,cAAc,QAAa,MAAW,WAA0B,MAAY;AAChF,QAAI,OAAO,SAAS,UAAU;AAC1B,aAAO,YAAY,UAAU;AAC7B;AAAA,IACJ;AACA,eAAW,WAAW,MAAM;AACxB,YAAM,eAAe,WAAW,GAAG,YAAY,YAAY;AAC3D,WAAK,cAAc,QAAQ,KAAK,UAAU,YAAY;AAAA,IAC1D;AAAA,EACJ;AACJ;",
+  "names": []
+}

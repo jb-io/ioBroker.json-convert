@@ -6,3 +6,8 @@ export interface ObjectConfiguration {
 export interface ObjectConfigurationList {
     [key: string]: ObjectConfiguration;
 }
+
+export type ScalarValue = number|string|boolean|null;
+export interface FlattenedObject {
+    [key: string]: ScalarValue;
+}
