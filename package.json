@@ -1,6 +1,6 @@
 {
   "name": "iobroker.json-convert",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Convert single json object to object tree",
   "author": {
     "name": "jb-io",

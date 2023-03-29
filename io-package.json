@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "json-convert",
-    "version": "0.0.3",
+    "version": "0.1.0",
     "news": {
+      "0.1.0": {
+        "en": "[TASK] Code refactoring\n[TASK] Add test cases",
+        "de": "[TASK] Code-Refactoring\n(TASK) Testfälle hinzufügen",
+        "ru": "[TASK] Код рефакторинг\n[ТАСК] Добавить тестовые случаи",
+        "pt": "[TASK] Refactoring de código\n[TASK] Adicionar casos de teste",
+        "nl": "Code refactoring\n[TASK] Voeg testzaken toe",
+        "fr": "[TASK] Code refactoring\n[TASK] Ajouter les cas d ' essai",
+        "it": "[TASK] Refactoring del codice\n[TASK] Aggiungere i casi di test",
+        "es": "[TASK] Code refactoring\n[TASK] Agregar casos de prueba",
+        "pl": "(TASK) Code refactoring (ang.)\n(TASK) (ang.). Addd test case",
+        "uk": "[TASK] Рефакторинг коду\n[ТАСК] Додавання тестових випадків",
+        "zh-cn": "[TASK]守则\n[TASK] 增加试验案件"
+      },
       "0.0.3": {
         "en": "[BUGFIX] Handle json decode exception \n[TASK] Fix adapter checks",
         "de": "[BUGFIX] Handle json decode Ausnahme\n[TASK] Adapterprüfungen reparieren",
